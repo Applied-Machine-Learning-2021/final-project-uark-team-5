@@ -21,4 +21,5 @@ Input must be 30 FPS for accurate results. Lower resolution videos process signf
 ## **License Information**
 
 Licensed under GNU General Public License v3.0
+  
 Please credit Jose Martinez and Wren Priest if you found this repository helpful!
