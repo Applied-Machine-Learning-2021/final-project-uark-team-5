@@ -1,29 +1,24 @@
-<!--
-Name of your teams' final project
--->
-# final-project
-## [National Action Council for Minorities in Engineering(NACME)](https://www.nacme.org) Google Applied Machine Learning Intensive (AMLI) at the `PARTICIPATING_UNIVERSITY`
+# <center> Vehicle-and-Human-Detection
 
-<!--
-List all of the members who developed the project and
-link to each members respective GitHub profile
--->
-Developed by: 
-- [member1](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY`
-- [member2](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY` 
-- [member3](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY` 
-- [member4](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY`
+## General Approach
 
-## Description
-<!--
-Give a short description on what your project accomplishes and what tools is uses. In addition, you can drop screenshots directly into your README file to add them to your README. Take these from your presentations.
--->
+Uses a cv2 while ret is True loop to process entire video
+- call object detection function (creates bounding boxes)
+- call counter function (check if bounding box intersects ROI)
+- call drawing functions (ROI line, bounding boxes, counter text)
+- return output video
 
-## Usage instructions
-<!--
-Give details on how to install fork and install your project. You can get all of the python dependencies for your project by typing `pip3 freeze requirements.txt` on the system that runs your project. Add the generated `requirements.txt` to this repo.
--->
-1. Fork this repo
-2. Change directories into your project
-3. On the command line, type `pip3 install requirements.txt`
-4. ....
+### Command Line Interface
+
+In the main directory, run main.py then answer all prompts.
+```python3 main.py```
+You can rename the source video in main.py to your own input.
+
+### Input Video Requirements
+
+Input must be 30 FPS for accurate results. Lower resolution videos process signficantly faster.
+
+## **License Information**
+
+Licensed under GNU General Public License v3.0
+Please credit Jose Martinez and Wren Priest if you found this repository helpful!
